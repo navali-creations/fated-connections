@@ -10,53 +10,53 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 
 const dirname =
-	typeof __dirname !== "undefined"
-		? __dirname
-		: path.dirname(fileURLToPath(import.meta.url));
+  typeof __dirname !== "undefined"
+    ? __dirname
+    : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-	plugins: [
-		react(),
-		tailwindcss(),
-		dts({
-			insertTypesEntry: true,
-		}),
-	],
-	test: {
-		projects: [
-			{
-				extends: true,
-				plugins: [
-					// The plugin will run tests for the stories defined in your Storybook config
-					// See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-					storybookTest({
-						configDir: path.join(dirname, ".storybook"),
-					}),
-				],
-				test: {
-					name: "storybook",
-					browser: {
-						enabled: true,
-						headless: true,
-						provider: playwright({}),
-						instances: [
-							{
-								browser: "chromium",
-							},
-						],
-					},
-				},
-			},
-		],
-	},
-	build: {
-		lib: {
-			entry: "src/index.ts",
-			formats: ["es"],
-		},
-		rollupOptions: {
-			external: ["react", "react-dom", "tailwindcss", "daisyui"],
-		},
-	},
+  plugins: [
+    react(),
+    tailwindcss(),
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
+  test: {
+    projects: [
+      {
+        extends: true,
+        plugins: [
+          // The plugin will run tests for the stories defined in your Storybook config
+          // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+          storybookTest({
+            configDir: path.join(dirname, ".storybook"),
+          }),
+        ],
+        test: {
+          name: "storybook",
+          browser: {
+            enabled: true,
+            headless: true,
+            provider: playwright({}),
+            instances: [
+              {
+                browser: "chromium",
+              },
+            ],
+          },
+        },
+      },
+    ],
+  },
+  build: {
+    lib: {
+      entry: "src/index.ts",
+      formats: ["es"],
+    },
+    rollupOptions: {
+      external: ["react", "react-dom", "tailwindcss", "daisyui"],
+    },
+  },
 });

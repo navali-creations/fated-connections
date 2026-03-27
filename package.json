@@ -1,61 +1,58 @@
 {
-	"name": "@navali/fated-connections",
-	"version": "0.0.0",
-	"private": false,
-	"type": "module",
-	"files": [
-		"dist"
-	],
-	"exports": {
-		".": {
-			"import": "./dist/fated-connections.js",
-			"types": "./dist/index.d.ts"
-		}
-	},
-	"types": "./dist/index.d.ts",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"preview": "vite preview",
-		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build",
-		"check": "biome check .",
-		"format": "biome format . --write"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.4.9",
-		"@chromatic-com/storybook": "^5.0.2",
-		"@storybook/addon-a11y": "^10.3.3",
-		"@storybook/addon-docs": "^10.3.3",
-		"@storybook/addon-onboarding": "^10.3.3",
-		"@storybook/addon-vitest": "^10.3.3",
-		"@storybook/react-vite": "^10.3.3",
-		"@tailwindcss/vite": "^4.2.2",
-		"@types/node": "^25.5.0",
-		"@types/react": "^19.2.14",
-		"@types/react-dom": "^19.2.3",
-		"@vitejs/plugin-react": "^6.0.1",
-		"@vitest/browser-playwright": "^4.1.1",
-		"@vitest/coverage-v8": "^4.1.1",
-		"eslint-plugin-storybook": "^10.3.3",
-		"playwright": "^1.58.2",
-		"storybook": "^10.3.3",
-		"tailwindcss": "^4.2.2",
-		"typescript": "^6.0.2",
-		"vite": "^8.0.1",
-		"vite-plugin-dts": "^4.5.4",
-		"vitest": "^4.1.1"
-	},
-	"dependencies": {
-		"clsx": "^2.1.1",
-		"daisyui": "^5.5.19",
-		"react": "^19.2.4",
-		"react-dom": "^19.2.4"
-	},
-	"peerDependencies": {
-		"daisyui": "^5.0.0",
-		"react": "^18.0.0 || ^19.0.0",
-		"react-dom": "^18.0.0 || ^19.0.0",
-		"tailwindcss": "^4.0.0"
-	}
+  "name": "@navali/fated-connections",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/fated-connections.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "check": "biome check .",
+    "format": "biome format . --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.9",
+    "@chromatic-com/storybook": "^5.0.2",
+    "@storybook/addon-a11y": "^10.3.3",
+    "@storybook/addon-docs": "^10.3.3",
+    "@storybook/addon-onboarding": "^10.3.3",
+    "@storybook/addon-vitest": "^10.3.3",
+    "@storybook/react-vite": "^10.3.3",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/browser-playwright": "^4.1.1",
+    "@vitest/coverage-v8": "^4.1.1",
+    "playwright": "^1.58.2",
+    "storybook": "^10.3.3",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.1.1",
+    "clsx": "^2.1.1",
+    "daisyui": "^5.5.19",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "daisyui": "^5.0.0"
+  }
 }
