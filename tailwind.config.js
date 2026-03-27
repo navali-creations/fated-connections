@@ -1,4 +1,4 @@
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  plugins: [require("daisyui")],
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	plugins: [require("daisyui")],
 };
