@@ -2,6 +2,7 @@
   "name": "@navali/fated-connections",
   "version": "0.0.1",
   "private": false,
+  "packageManager": "pnpm@10.28.0",
   "type": "module",
   "files": [
     "dist"
