@@ -9,13 +9,6 @@
       { "pkgRoot": ".", "access": "public", "provenance": true }
     ],
     [
-      "@semantic-release/git",
-      {
-        "assets": ["package.json", "dist"],
-        "message": "chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ],
-    [
       "@semantic-release/github",
       {
         "releasedLabels": ["released"]
