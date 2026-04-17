@@ -53,7 +53,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.ts",
-      cssFileName: "index.css",
+      fileName: "index",
       formats: ["es"],
     },
     rollupOptions: {
