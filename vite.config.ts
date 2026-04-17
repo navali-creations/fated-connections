@@ -53,6 +53,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.ts",
+      name: "fated-connections",
+      fileName: "fated-connections",
       formats: ["es"],
     },
     rollupOptions: {
