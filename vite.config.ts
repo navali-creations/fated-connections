@@ -20,7 +20,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     dts({
-      insertTypesEntry: true,
+      tsconfigPath: "./tsconfig.app.json",
+      exclude: ["**/*.stories.tsx", "**/*.stories.ts"],
     }),
   ],
   test: {
