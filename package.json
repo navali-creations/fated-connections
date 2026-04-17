@@ -12,14 +12,15 @@
   "packageManager": "pnpm@10.28.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src/theme.css"
   ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./index.css": "./dist/index.css"
+    "./theme.css": "./src/theme.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
