@@ -53,10 +53,19 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.ts",
+      cssFileName: "index.css",
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime", "react/jsx-dev-runtime", "react-dom", "tailwindcss", "daisyui", "clsx"],
+      external: [
+        "react",
+        "react/jsx-runtime",
+        "react/jsx-dev-runtime",
+        "react-dom",
+        "tailwindcss",
+        "daisyui",
+        "clsx",
+      ],
     },
   },
 });
