@@ -30,6 +30,9 @@
     "check": "biome check .",
     "format": "biome format . --write"
   },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.4.9",
     "@chromatic-com/storybook": "^5.0.2",
@@ -57,7 +60,6 @@
     "vite": "^8.0.1",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.1.1",
-    "clsx": "^2.1.1",
     "daisyui": "^5.5.19",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
