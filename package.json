@@ -16,9 +16,10 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/fated-connections.js",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./index.css": "./dist/index.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
