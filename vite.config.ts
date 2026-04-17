@@ -56,7 +56,7 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react-dom", "tailwindcss", "daisyui"],
+      external: ["react", "react/jsx-runtime", "react/jsx-dev-runtime", "react-dom", "tailwindcss", "daisyui", "clsx"],
     },
   },
 });
