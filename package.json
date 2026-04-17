@@ -1,7 +1,15 @@
 {
   "name": "@navali/fated-connections",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navali-creations/fated-connections.git"
+  },
+  "packageManager": "pnpm@10.28.0",
   "type": "module",
   "files": [
     "dist"
@@ -25,6 +33,11 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.9",
     "@chromatic-com/storybook": "^5.0.2",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "semantic-release": "^25.0.3",
     "@storybook/addon-a11y": "^10.3.3",
     "@storybook/addon-docs": "^10.3.3",
     "@storybook/addon-onboarding": "^10.3.3",
