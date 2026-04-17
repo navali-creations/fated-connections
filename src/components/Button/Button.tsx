@@ -14,7 +14,7 @@ type ButtonVariant =
 
 type ButtonSize = "lg" | "md" | "sm" | "xs";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant?: ButtonVariant;
   size?: ButtonSize;

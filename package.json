@@ -24,16 +24,14 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "check": "biome check .",
     "format": "biome format . --write"
   },
-  "dependencies": {
-    "clsx": "^2.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^2.4.9",
     "@chromatic-com/storybook": "^5.0.2",
@@ -54,6 +52,7 @@
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/browser-playwright": "^4.1.1",
     "@vitest/coverage-v8": "^4.1.1",
+    "clsx": "^2.1.1",
     "playwright": "^1.58.2",
     "storybook": "^10.3.3",
     "tailwindcss": "^4.2.2",
